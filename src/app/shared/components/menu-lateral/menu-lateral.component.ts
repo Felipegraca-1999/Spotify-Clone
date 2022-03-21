@@ -48,6 +48,71 @@ export class MenuLateralComponent implements OnInit {
       cartilhada: true,
       executando: false
     },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
+    {
+      nome: "Playlist de leitura ♥",
+      cartilhada: true,
+      executando: false
+    },
   ];
 
   myOptions = {
