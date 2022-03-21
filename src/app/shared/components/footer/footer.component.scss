@@ -3,15 +3,15 @@
   width: 100%;
   border-top: solid 0.5px rgba(255, 255, 255, 0.164);
   background-color: #181818;
-  padding: 13px 0 0 20px;
+  padding: 0 0 0 20px;
 
 
   &__music-info{
     display: flex;
 
     img{
-      margin-right: 10px;
-      transform: scale(0.85);
+      margin-right: 6px;
+      transform: scale(0.74);
     }
 
     &_display{
@@ -26,6 +26,7 @@
         .nome-musica{
           color: rgba(255, 255, 255, 1);
           font-weight: 500;
+          height: 12px;
         }
 
         .autor-musica{

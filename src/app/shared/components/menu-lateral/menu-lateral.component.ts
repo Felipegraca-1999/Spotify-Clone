@@ -26,7 +26,7 @@ export class MenuLateralComponent implements OnInit {
     {
       nome: "Sambinha de domingo e churrasco com amigos tops",
       cartilhada: true,
-      executando: true
+      executando: false
     },
     {
       nome: "Fritando muito",
