@@ -1,0 +1,58 @@
+<div class="menu-lateral">
+  <div class="menu-lateral__primary">
+    <img src="../../../../assets/images/logo_banco.png" alt="logo do menu lateral" class="logo">
+    <div class="menu-lateral__primary-menu_itens">
+      <div class="iten">
+        <mat-icon class="white-color" aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+        <label class="white-color">Inicío</label>
+      </div>
+      <div class="iten">
+        <mat-icon class="gray-color" aria-hidden="false" aria-label="Example home icon">search</mat-icon>
+        <label class="gray-color">Buscar</label>
+      </div>
+      <div class="iten">
+        <mat-icon class="gray-color" aria-hidden="false" aria-label="Example home icon">library_music</mat-icon>
+        <label class="gray-color">Sua biblioteca</label>
+      </div>
+    </div>
+
+    <!-- Criar biblioteca e musicas curtidas -->
+    <div class="menu-lateral__primary-music">
+      <!-- adicionar na playlist -->
+      <div class="menu-lateral__primary-music-add">
+        <div class="menu-lateral__primary-music-add-icon">
+          <mat-icon>add</mat-icon>
+        </div>
+        <label>Criar playlist</label>
+      </div>
+      <!-- musicas curtidas -->
+      <div class="menu-lateral__primary-music-favorito">
+        <div class="menu-lateral__primary-music-favorito-icon">
+          <mat-icon>favorite</mat-icon>
+        </div>
+        <label>Músicas curtidas</label>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="divider_area">
+      <div class="divider"></div>
+    </div>
+
+    <div class="menu-lateral__playlists">
+      <div class="menu-lateral__playlists-item" *ngFor="let item of playlist">
+        <label tooltip="{{item.nome.length > 25 ? item.nome : ''}}" [options]="myOptions">{{ (item.nome.length>25)? (item.nome | slice:0:25)+'..':(item.nome) }}</label>
+        <mat-icon *ngIf="item.executando">volume_up</mat-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-lateral__secundary">
+    <div class="menu-lateral__secundary-instaler">
+      <div class="menu-lateral__secundary-instaler_icon">
+        <mat-icon>arrow_downward</mat-icon>
+      </div>
+      <label>Instalar aplicativo</label>
+    </div>
+  </div>
+</div>

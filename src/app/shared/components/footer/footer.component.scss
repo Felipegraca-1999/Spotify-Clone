@@ -1,0 +1,47 @@
+.footer-main {
+  height: 100%;
+  width: 100%;
+  border-top: solid 0.5px rgba(255, 255, 255, 0.164);
+  background-color: #181818;
+  padding: 13px 0 0 20px;
+
+
+  &__music-info{
+    display: flex;
+
+    img{
+      margin-right: 10px;
+      transform: scale(0.85);
+    }
+
+    &_display{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-text{
+        display: flex;
+        flex-direction: column;
+
+        .nome-musica{
+          color: rgba(255, 255, 255, 1);
+          font-weight: 500;
+        }
+
+        .autor-musica{
+          color: rgba(255, 255, 255, 0.589);
+          font-size: 0.8em;
+          font-weight: 100;
+        }
+      }
+
+      mat-icon{
+        margin: 0 0 0 30px;
+        color: #1DB954;
+        transform: scale(0.7);
+      }
+    }
+
+
+  }
+}
