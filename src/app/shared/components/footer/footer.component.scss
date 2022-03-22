@@ -4,6 +4,8 @@
   border-top: solid 0.5px rgba(255, 255, 255, 0.164);
   background-color: #181818;
   padding: 0 0 0 20px;
+  display: flex;
+  justify-content: space-between;
 
 
   &__music-info{
@@ -11,7 +13,7 @@
 
     img{
       margin-right: 6px;
-      transform: scale(0.74);
+      transform: scale(0.65);
     }
 
     &_display{
@@ -42,7 +44,34 @@
         transform: scale(0.7);
       }
     }
+  }
+
+  &__player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 
+
+    &-bar{
+      display: flex;
+      column-gap: 6px;
+      align-items: center;
+
+      &_container{
+        height: 4px;
+        width: 550px;
+        max-width: 550px;
+        background-color: gray;
+        border-radius: 10px;
+      }
+
+      label{
+        padding-top: 2px;
+        color: rgba(153, 153, 153, 0.74);
+        font-size: 0.78em;
+      }
+    }
   }
 }
