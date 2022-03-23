@@ -155,7 +155,7 @@
     .menu-lateral__playlists {
       width: 100%;
       display: flex;
-      max-height: 43%;
+      max-height: calc(100% - 344px);
       flex-direction: column;
       padding: 10px 0 0 23px;
       overflow-y: scroll;

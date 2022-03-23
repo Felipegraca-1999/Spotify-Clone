@@ -7,67 +7,138 @@
   display: flex;
   justify-content: space-between;
 
-
-  &__music-info{
+  &__music-info {
     display: flex;
 
-    img{
+    img {
       margin-right: 6px;
       transform: scale(0.65);
     }
 
-    &_display{
+    &_display {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      &-text{
+      &-text {
         display: flex;
         flex-direction: column;
 
-        .nome-musica{
+        .nome-musica {
           color: rgba(255, 255, 255, 1);
           font-weight: 500;
           height: 12px;
         }
 
-        .autor-musica{
+        .autor-musica {
           color: rgba(255, 255, 255, 0.589);
           font-size: 0.8em;
           font-weight: 100;
         }
       }
 
-      mat-icon{
+      mat-icon {
         margin: 0 0 0 30px;
-        color: #1DB954;
+        color: #1db954;
         transform: scale(0.7);
       }
     }
   }
 
-  &__player{
+  &__player {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    width: 100%;
+    max-width: 550px;
+
+    &-icones {
+      display: flex;
+      column-gap: 25px;
+      margin-bottom: 5px;
+
+      .icon{
+        transform: scale(1.4);
+        color: #B3B3B3;
+      }
+
+      .icon-center{
+        transform: scale(1.6);
+        color: #FFFFFF;
+      }
+
+      &_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .bolinha{
+          display: none;
+          width: 4px;
+          height: 4px;
+          background-color: #1ed760;
+          filter: contrast(1.5);
+          border-radius: 100%;
+        }
+
+        &:active{
+          .bolinha{
+            display: initial;
+          }
+        }
 
 
-    &-bar{
+        mat-icon {
+          color: #b3b3b3;
+          transform: scale(0.9);
+        }
+      }
+
+    }
+
+    &-bar {
+      width: 100%;
       display: flex;
       column-gap: 6px;
       align-items: center;
 
-      &_container{
+      &_container {
+        display: flex;
+        align-items: center;
         height: 4px;
-        width: 550px;
-        max-width: 550px;
+        width: 100%;
         background-color: gray;
         border-radius: 10px;
+
+        &-material {
+          height: 4px;
+          background-color: white;
+          border-radius: 10px;
+        }
+
+        .bolinha {
+          width: 10px;
+          height: 10px;
+          background-color: white;
+          border-radius: 100%;
+          display: none;
+        }
+
+        &:hover {
+          .footer-main__player-bar_container-material {
+            background-color: #1ed760;
+            filter: contrast(1.5);
+          }
+          .bolinha {
+            display: initial;
+          }
+        }
       }
 
-      label{
+      label {
         padding-top: 2px;
         color: rgba(153, 153, 153, 0.74);
         font-size: 0.78em;
