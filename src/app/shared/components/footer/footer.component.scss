@@ -3,11 +3,12 @@
   width: 100%;
   border-top: solid 0.5px rgba(255, 255, 255, 0.164);
   background-color: #181818;
-  padding: 0 0 0 20px;
   display: flex;
   justify-content: space-between;
 
   &__music-info {
+    min-width: 250px;
+    margin-right: 10px;
     display: flex;
 
     img {
@@ -51,6 +52,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 25px 0 25px;
 
     width: 100%;
     max-width: 550px;
@@ -133,6 +135,30 @@
         padding-top: 2px;
         color: rgba(153, 153, 153, 0.74);
         font-size: 0.78em;
+      }
+    }
+  }
+
+  &__volume{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 0 10px 0 10px;
+    mat-icon{
+      transform: scale(0.85);
+      color: #b3b3b3;
+    }
+    &-bar_container{
+      width: 100px;
+      height: 4px;
+      background-color: gray;
+      border-radius: 8px;
+      filter: contrast(1.5);
+
+      &-material{
+        height: 4px;
+        border-radius: 8px;
+        background-color: #fff;
       }
     }
   }
