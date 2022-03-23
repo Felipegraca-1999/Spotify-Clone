@@ -57,6 +57,7 @@
 
     &-icones {
       display: flex;
+      height: 30px;
       column-gap: 25px;
       margin-bottom: 5px;
 
@@ -68,28 +69,18 @@
       .icon-center{
         transform: scale(1.6);
         color: #FFFFFF;
-      }
 
+        &:active{
+          transform: scale(1.5);
+        }
+      }
+      
+
+      
       &_box {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        .bolinha{
-          display: none;
-          width: 4px;
-          height: 4px;
-          background-color: #1ed760;
-          filter: contrast(1.5);
-          border-radius: 100%;
-        }
-
-        &:active{
-          .bolinha{
-            display: initial;
-          }
-        }
-
 
         mat-icon {
           color: #b3b3b3;
@@ -145,4 +136,22 @@
       }
     }
   }
+}
+
+
+
+
+.bolinha{
+  width: 4px;
+  height: 4px;
+  background-color: #1ed760;
+  filter: contrast(1.5);
+  border-radius: 100%;
+}
+
+.displayOff{
+  display: none;
+}
+.displayOn{
+  display: initial;
 }
