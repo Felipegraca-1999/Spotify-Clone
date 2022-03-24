@@ -10,7 +10,7 @@
     height: 90%;
 
     .menu-lateral{
-      max-width: 280px;
+      max-width: 300px;
     }
   }
 
@@ -43,5 +43,6 @@
 }
 
 ::-webkit-scrollbar-track {
+  opacity: 0;
   background: #121212;
 }
